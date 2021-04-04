@@ -1,0 +1,10 @@
+
+<suite name="Automation_Test" verbose="1" parallel="classes" thread-count="2">
+    <test name="Mortgage_Calculator" >
+        <classes>
+            <class name="automation_test.mortgage_calculator.CalculateApr" />
+            <class name="automation_test.mortgage_calculator.CalculateMonthlyPayment"/>
+        </classes>
+    </test>
+
+</suite>
