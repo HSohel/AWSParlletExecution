@@ -7,4 +7,11 @@
         </classes>
     </test>
 
+    <test name="Mortgage_Calculator" >
+        <classes>
+            <class name="automation_test.mortgage_calculator.CalculateApr" />
+            <class name="automation_test.mortgage_calculator.CalculateMonthlyPayment"/>
+        </classes>
+    </test>
+
 </suite>
