@@ -1,12 +1,16 @@
 
-<suite name="Automation_Test" verbose="1">
-    <test name="api_test">
-    <classes>
-        <class name="automation_test.api_test.SimpleGetTest"/>
-        <class name="automation_test.api_test.SimplePostTest"/>
-        <class name="automation_test.api_test.SimplePUTTest"/>
-        <class name="automation_test.api_test.SimplePATCHTest"/>
-        <class name="automation_test.api_test.SimpleDeleteTest"/>
-    </classes>
+<suite name="Automation_Test" verbose="1" >
+    <test name="Mortgage_Calculator" >
+        <classes>
+            <class name="automation_test.mortgage_calculator.CalculateApr" />
+            <class name="automation_test.mortgage_calculator.CalculateMonthlyPayment"/>
+        </classes>
     </test>
+
+    <test name="php_travels" >
+        <classes>
+            <class name="automation_test.php_travels.PHPTravel"/>
+        </classes>
+    </test>
+
 </suite>
