@@ -8,8 +8,8 @@ import io.restassured.specification.RequestSpecification;
 import listeners.LoggerForParallelTests;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.Test;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class SimpleGetTest extends LoggerForParallelTests {
     //private static final Logger LOGGER= LogManager.getLogger(TestNgMavenTest.class);
