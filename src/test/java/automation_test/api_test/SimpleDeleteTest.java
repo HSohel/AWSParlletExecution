@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 public class SimpleDeleteTest {
 
-    private static final Logger LOGGER= LogManager.getLogger(TestNgMavenTest.class);
+    //private static final Logger LOGGER= LogManager.getLogger(TestNgMavenTest.class);
     @Test
     public void deleteSingleUserRecord(){
         RestAssured.baseURI="https://reqres.in/api/users";
@@ -20,11 +20,11 @@ public class SimpleDeleteTest {
 
         Response response=httpRequest.request(Method.DELETE,"/2");
 
-        LOGGER.debug("Response status code :"+response.getStatusCode());
+        //LOGGER.debug("Response status code :"+response.getStatusCode());
         Assert.assertEquals(response.getStatusCode(),204);
         Assert.assertEquals(response.getBody().asString(),"");
 
-        LOGGER.debug("Response body is : "+response.getBody().asString());
+        //LOGGER.debug("Response body is : "+response.getBody().asString());
 
 
 

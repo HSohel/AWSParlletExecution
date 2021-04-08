@@ -13,7 +13,7 @@ import org.junit.Test;
 import org.testng.Assert;
 
 public class SimplePostTest {
-    private static final Logger LOGGER= LogManager.getLogger(TestNgMavenTest.class);
+    //private static final Logger LOGGER= LogManager.getLogger(TestNgMavenTest.class);
     @Test
     public void createNewUser(){
         String userName="Adam";
@@ -32,12 +32,12 @@ public class SimplePostTest {
 
         Response response=httpRequest.request(Method.POST);
 
-        LOGGER.debug(" Request Status code is :"+response.getStatusCode());
+        //LOGGER.debug(" Request Status code is :"+response.getStatusCode());
         Assert.assertEquals(response.getStatusCode(),201);
 
         JsonPath jsonpath=response.jsonPath();
         String record=jsonpath.getString("name");
-        LOGGER.debug("Expected record is :"+record +" Actual record is :"+userName);
+        //LOGGER.debug("Expected record is :"+record +" Actual record is :"+userName);
         Assert.assertEquals(record,userName);
 
     }

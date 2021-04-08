@@ -13,7 +13,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class SimplePATCHTest {
-    private static final Logger LOGGER= LogManager.getLogger(TestNgMavenTest.class);
+    //private static final Logger LOGGER= LogManager.getLogger(TestNgMavenTest.class);
    @Test
     public void updateExistingUserSingleRequest(){
         String userName="Mike";
@@ -31,14 +31,14 @@ public class SimplePATCHTest {
 
         Response response=httpRequest.request(Method.PATCH,"/2");
 
-        LOGGER.debug("Request Status code is :"+response.getStatusCode());
+        //LOGGER.debug("Request Status code is :"+response.getStatusCode());
         //Validate status code
         Assert.assertEquals(response.getStatusCode(),200);
 
         //Validate that user record is updated
         JsonPath jsonpath=response.jsonPath();
         String record=jsonpath.getString("job");
-        LOGGER.debug("Expected Job Title :"+jobTitle+" and Actual Job Title :"+record);
+        //LOGGER.debug("Expected Job Title :"+jobTitle+" and Actual Job Title :"+record);
         Assert.assertEquals(record,record);
 
 

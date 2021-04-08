@@ -11,7 +11,7 @@ import org.junit.Test;
 import org.testng.Assert;
 
 public class SimpleGetTest {
-    private static final Logger LOGGER= LogManager.getLogger(TestNgMavenTest.class);
+    //private static final Logger LOGGER= LogManager.getLogger(TestNgMavenTest.class);
 
     @Test
     public void getAllUsers(){
@@ -25,13 +25,13 @@ public class SimpleGetTest {
         //Make a request to the specified server by specifying method type.
         //This will return response from the server and that will store in response variable.
         Response response=httpRequest.request(Method.GET);
-        LOGGER.debug(response);
+        //LOGGER.debug(response);
 
         //Get the status code in log file
-        LOGGER.debug(response.getStatusCode());
+        //LOGGER.debug(response.getStatusCode());
 
         //Get the response body in the log file
-        LOGGER.debug(response.getBody().asString());
+        //LOGGER.debug(response.getBody().asString());
 
         //PRINT status code
         System.out.println("Actual status code is "+response.getStatusCode());
@@ -46,9 +46,9 @@ public class SimpleGetTest {
         //First create json path object from the response
         JsonPath jsonpath =response.jsonPath();
         String r1=jsonpath.getString("data[0].id");
-        LOGGER.debug(r1);
+        //LOGGER.debug(r1);
         Assert.assertNotNull(jsonpath.getString("data[0]"),"User Record is null");
-        LOGGER.debug("<--------First Test Case End--------->");
+        //LOGGER.debug("<--------First Test Case End--------->");
 
     }
 
@@ -62,13 +62,13 @@ public class SimpleGetTest {
 
         Response response=httpRequest.request(Method.GET,"/2");
 
-        LOGGER.debug(response.getStatusCode());
+        //LOGGER.debug(response.getStatusCode());
 
         //Validate firstName of the getSingleUser();
         JsonPath jsonpath=response.jsonPath();
 
         String record=jsonpath.getString("data.first_name");
-        LOGGER.debug("expected Single user first name is janet and Actual first name is "+record);
+        //LOGGER.debug("expected Single user first name is janet and Actual first name is "+record);
         Assert.assertEquals(record,"Janet");
 
 

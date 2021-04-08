@@ -36,10 +36,6 @@ public class SimplePUTTest {
         String record=jsonPath.getString("name");
         LOGGER.debug("Expected :"+userName+" Actual :"+record);
         Assert.assertEquals(record,userName);
-
-
-
-
     }
 
 }
