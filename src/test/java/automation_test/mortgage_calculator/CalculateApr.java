@@ -27,18 +27,6 @@ public class CalculateApr extends LoggerForParallelTests {
 
     WebDriver driver;
 
-
-    @BeforeMethod
-
-    public void BrowserInitialization() throws IOException {
-        //LOGGER.info("<------Test Case CalculateApr Starts");
-        String URL=GetData.getPropertyValue("url");
-        driver= TestEnvironment.selectTestExecutionEnvironment();
-        //LOGGER.info("Invoke URL "+URL);
-        ActOn.browser(driver).OPenBrowser(URL);
-    }
-
-
     @Test (retryAnalyzer = retryFailedTest.class)
     public void calculateRealApr(){
 
@@ -54,15 +42,4 @@ public class CalculateApr extends LoggerForParallelTests {
                   .validateAPR("3.132%");
 
     }
-
-
-    @AfterMethod
-    public void closeBrowser(){
-        ActOn.browser(driver).CloseBrowser();
-        //LOGGER.info("<------Test Case CalculateApr Ends");
-
-
-    }
-
-
 }

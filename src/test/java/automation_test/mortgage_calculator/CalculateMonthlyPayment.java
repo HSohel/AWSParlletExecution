@@ -29,16 +29,6 @@ public class CalculateMonthlyPayment extends LoggerForParallelTests {
     //private static final Logger LOGGER= LogManager.getLogger(TestNgMavenTest.class);
     WebDriver driver;
 
-    @BeforeMethod
-    public void BrowserInitialization() throws IOException {
-        //LOGGER.info("Test Case : CalculateMonthlyPayment starts here------->");
-        driver= TestEnvironment.selectTestExecutionEnvironment();
-        String URL= GetData.getPropertyValue("url");
-        //LOGGER.info("Invoke URL "+URL);
-        ActOn.browser(driver).OPenBrowser(URL);
-    }
-
-
       @Test (retryAnalyzer = retryFailedTest.class)
        public void calculateRate(){
           ResultSet rs= SqlConnector.readData("Select * FROM monthly_mortgage");
@@ -69,11 +59,4 @@ public class CalculateMonthlyPayment extends LoggerForParallelTests {
 
       }
 
-
-    @AfterMethod
-      public void closeBrowser(){
-      ActOn.browser(driver).CloseBrowser();
-      //LOGGER.info("<------Test Case Ends here------->");
-
-    }
 }
