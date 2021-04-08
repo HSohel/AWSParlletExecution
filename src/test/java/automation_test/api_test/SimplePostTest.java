@@ -6,13 +6,14 @@ import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import listeners.LoggerForParallelTests;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.json.simple.JSONObject;
 import org.junit.Test;
 import org.testng.Assert;
 
-public class SimplePostTest {
+public class SimplePostTest extends LoggerForParallelTests {
     //private static final Logger LOGGER= LogManager.getLogger(TestNgMavenTest.class);
     @Test
     public void createNewUser(){
