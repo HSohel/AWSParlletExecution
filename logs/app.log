@@ -1,0 +1,41 @@
+2021-03-28 20:22:19.002 [main][3485] INFO  Testing.TestNgMavenTest - <------Test Case CalculateApr Starts
+2021-03-28 20:22:19.017 [main][3500] INFO  utilities.TestEnvironment - Execute test with chrome browser in local machine
+2021-03-28 20:22:22.168 [main][6651] INFO  Testing.TestNgMavenTest - Invoke URL https://www.mortgagecalculator.org/
+2021-03-28 20:22:23.994 [main][8477] INFO  Testing.TestNgMavenTest - Launch browser :https://www.mortgagecalculator.org/
+2021-03-28 20:22:30.908 [main][15391] DEBUG Testing.TestNgMavenTest - Mouse Hover to Rates Link
+2021-03-28 20:22:31.107 [main][15590] DEBUG Testing.TestNgMavenTest - Click on Real Apr Link
+2021-03-28 20:22:38.769 [main][23252] DEBUG Testing.TestNgMavenTest - Set Home price :200000
+2021-03-28 20:22:39.399 [main][23882] DEBUG Testing.TestNgMavenTest - Set DownPayment :20000
+2021-03-28 20:22:39.807 [main][24290] DEBUG Testing.TestNgMavenTest - Click on DownPaymentInDollar Radio button
+2021-03-28 20:22:39.992 [main][24475] DEBUG Testing.TestNgMavenTest - Set InterestRate :3%
+2021-03-28 20:22:40.248 [main][24731] DEBUG Testing.TestNgMavenTest - Set Length :30
+2021-03-28 20:22:40.511 [main][24994] DEBUG Testing.TestNgMavenTest - Click on Calculate Button
+2021-03-28 20:22:43.167 [main][27650] DEBUG Testing.TestNgMavenTest - Validate Expected APR :3.412% with Actual APR :3.132%
+2021-03-28 20:22:44.951 [main][29434] INFO  Testing.TestNgMavenTest - <------Test Case CalculateApr Ends
+2021-03-28 20:22:44.964 [main][29447] INFO  Testing.TestNgMavenTest - Test Case : CalculateMonthlyPayment starts here------->
+2021-03-28 20:22:44.965 [main][29448] INFO  utilities.TestEnvironment - Execute test with chrome browser in local machine
+2021-03-28 20:22:46.841 [main][31324] INFO  Testing.TestNgMavenTest - Invoke URL https://www.mortgagecalculator.org/
+2021-03-28 20:22:48.749 [main][33232] INFO  Testing.TestNgMavenTest - Launch browser :https://www.mortgagecalculator.org/
+2021-03-28 20:22:55.958 [main][40441] DEBUG Testing.TestNgMavenTest - Enter Home price :300000
+2021-03-28 20:22:56.187 [main][40670] DEBUG Testing.TestNgMavenTest - Enter DownPayment :60000
+2021-03-28 20:22:56.358 [main][40841] DEBUG Testing.TestNgMavenTest - Click on Dollar Radio button 
+2021-03-28 20:22:56.441 [main][40924] DEBUG Testing.TestNgMavenTest - Enter Loan Amount :240000
+2021-03-28 20:22:56.624 [main][41107] DEBUG Testing.TestNgMavenTest - Enter interestRate :3
+2021-03-28 20:22:56.768 [main][41251] DEBUG Testing.TestNgMavenTest - Enter Loan Term :30
+2021-03-28 20:22:56.905 [main][41388] DEBUG Testing.TestNgMavenTest - Select Start date :Dec
+2021-03-28 20:22:57.026 [main][41509] DEBUG Testing.TestNgMavenTest - Enter startYear :2020
+2021-03-28 20:22:57.201 [main][41684] DEBUG Testing.TestNgMavenTest - Enter Property Tax :5000
+2021-03-28 20:22:57.351 [main][41834] DEBUG Testing.TestNgMavenTest - Enter PMI:0.5
+2021-03-28 20:22:57.487 [main][41970] DEBUG Testing.TestNgMavenTest - Enter Home Owner Association fee:1000
+2021-03-28 20:22:57.630 [main][42113] DEBUG Testing.TestNgMavenTest - Enter HOA:100
+2021-03-28 20:22:57.774 [main][42257] DEBUG Testing.TestNgMavenTest - Select Loan Type:Conventional
+2021-03-28 20:22:57.833 [main][42316] DEBUG Testing.TestNgMavenTest - Select buy or Refinance:Buy
+2021-03-28 20:22:57.939 [main][42422] DEBUG Testing.TestNgMavenTest - Click on Calculate Button
+2021-03-28 20:23:00.034 [main][44517] DEBUG Testing.TestNgMavenTest - Validate Total Monthly Payment with Expected:$1,611.85 and Actual :$1,611.85
+2021-03-28 20:23:01.580 [main][46063] INFO  Testing.TestNgMavenTest - <------Test Case Ends here------->
+2021-03-28 20:23:01.583 [main][46066] INFO  Testing.TestNgMavenTest - <-----Test Case :PHPTravel start here------>
+2021-03-28 20:23:01.585 [main][46068] INFO  utilities.TestEnvironment - Execute test with chrome browser in local machine
+2021-03-28 20:23:03.792 [main][48275] INFO  Testing.TestNgMavenTest - Invoke URL https://phptravels.com/
+2021-03-28 20:23:05.765 [main][50248] INFO  Testing.TestNgMavenTest - Launch browser :https://phptravels.com/
+2021-03-28 20:23:12.584 [main][57067] DEBUG Testing.TestNgMavenTest - Validate title Expected:PHPTRAVELS booking script and system for hotels airline flights tours cars online application - PHPTRAVELS Actual :PHPTRAVELS booking script and system for hotels airline flights tours cars online application - PHPTRAVELS
+2021-03-28 20:23:13.845 [main][58328] INFO  Testing.TestNgMavenTest - <-----Test Case :PHPTravel end here------>

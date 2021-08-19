@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 83.416 s <<< FAILURE! - in TestSuite
+automation_test.mortgage_calculator.CalculateApr.calculateRealApr  Time elapsed: 8.189 s  <<< FAILURE!
+java.lang.AssertionError: expected [3.4%] but found [3.132%]
+	at automation_test.mortgage_calculator.CalculateApr.calculateRealApr(CalculateApr.java:55)
+
